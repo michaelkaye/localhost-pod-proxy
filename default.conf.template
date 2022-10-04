@@ -1,0 +1,6 @@
+server {
+  listen ${NGINX_PORT} ;
+  location / {
+    proxy_pass ${NGINX_TARGET} ;
+  }
+}
